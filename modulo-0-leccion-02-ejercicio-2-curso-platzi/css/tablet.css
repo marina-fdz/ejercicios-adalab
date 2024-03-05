@@ -1,0 +1,43 @@
+.logo {
+    width: 40%;
+    margin-bottom: 0rem;
+    margin-top: 0rem;
+}
+
+.logo-header {
+    text-align: left;
+}
+
+.menu {
+    width: 60%;
+   justify-content: right;
+}
+
+.sidebar {
+    order: 1;
+    width: 30%;
+    padding-bottom: 7rem;
+    padding-top: 6rem;
+    min-height: 1400px;
+}
+
+.main-content {
+    order: 2;
+    width: 70%;
+    padding-bottom: 7rem;
+    padding-top: 6rem;
+    
+}
+
+p {
+    width: 90%;
+}
+
+.company-name {
+    width: 70%;
+    color: darkslategray;
+}
+
+.social-links {
+    width: 30%;
+}

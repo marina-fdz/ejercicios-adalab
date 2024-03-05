@@ -1,0 +1,238 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: "Jacquarda Bastarda 9", serif;
+    font-weight: 400;
+    font-style: normal;
+} 
+
+body {
+    font-size: 1.6rem;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+header {
+    position: fixed;
+    top: 0rem;
+    width: 100%;
+    height: fit-content;
+    background-color: lavender;
+    display: inline-flex;
+    flex-wrap: wrap;
+    padding: 0.5rem;
+    align-items: center;
+}
+
+.logo {
+    width: 100%;
+    margin-bottom: 1rem;
+    margin-top: 0.2rem;
+}
+
+.logo-header {
+    text-align: center;
+}
+
+.menu {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-evenly;
+    justify-content: center;
+}
+
+.menu-item {
+    justify-content: flex-end;
+    list-style: none;
+    margin-inline: 1rem;
+
+}
+
+.menu-item a {
+    text-align: right;
+    text-decoration: none;
+    color: darkslategray;
+}
+
+.menu-item a:hover {
+    color:black;
+}
+
+.menu-item a:active {
+    color: plum;
+}
+
+main .container {
+    position:relative;
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 80rem;
+  }
+
+.sidebar {
+    order: 2;
+    width: 100%;
+    background-color: salmon;
+    padding: 0.8rem;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10rem;
+    padding-top: 2rem;
+}
+
+/* Como conseguir que el sidebar y el main-content se muevan independientemente? */
+
+.box {
+    height: 10rem;
+    flex-basis: 15rem;
+    flex-grow: 1;
+    background-color: plum;
+    margin: 0.8rem;
+    border-radius: 1rem;
+}
+
+.main-content {
+    order: 1;
+    width: 100%;
+    background-color: slategray;
+    padding: 1.5rem;
+    padding-bottom: 10rem;
+    padding-top: 7rem;
+    
+}
+
+p {
+    width: 100%;
+    text-align: left;
+    font-size: 2rem;
+    margin-bottom: 3rem;
+    
+}
+
+footer {
+    position: fixed;
+    bottom: 0rem;
+    width: 100%;
+    background-color: khaki;
+    display: inline-flex;
+    flex-wrap: wrap;
+    padding: 0.5rem;
+    align-items: center;
+}
+
+.company-name {
+    width: 60%;
+    color: darkslategray;
+}
+
+.social-links {
+    width: 40%;
+    display: inline-flex;
+    justify-content: space-evenly;
+}
+
+.rrss-item a {
+    color:darkslategray;
+    text-decoration: none;
+}
+
+.rrss-item {
+    list-style: none;
+    text-align: right;
+}
+
+.rrss-item a:hover {
+color: black;
+}
+
+.rrss-item a:active {
+    color:plum
+}
+
+/*
+
+@media (min-width: 600px) {
+    
+    .logo {
+        width: 40%;
+        margin-bottom: 0rem;
+        margin-top: 0rem;
+    }
+
+    .logo-header {
+        text-align: left;
+    }
+
+    .menu {
+        width: 60%;
+       justify-content: right;
+    }
+
+    .sidebar {
+        order: 1;
+        width: 30%;
+        padding-bottom: 7rem;
+        padding-top: 6rem;
+        min-height: 1400px;
+    }
+    
+   .main-content {
+        order: 2;
+        width: 70%;
+        padding-bottom: 7rem;
+        padding-top: 6rem;
+        
+    }
+
+    p {
+        width: 90%;
+    }
+
+    .company-name {
+        width: 70%;
+        color: darkslategray;
+    }
+    
+    .social-links {
+        width: 30%;
+    }
+}
+
+@media (min-width: 1000px) {
+
+    body {
+        font-size: 2rem;
+    }
+
+    .main-content {
+        padding: 3rem;
+        
+    }
+
+    .sidebar {
+        padding-bottom: 10rem;
+        padding-top: 8rem;
+        min-height: 1500px;
+    }
+    
+   .main-content {
+        padding-bottom: 10rem;
+        padding-top: 8rem;
+        
+    }
+
+    p {
+        font-size: 2.4rem;
+        margin-bottom: 3rem;
+        width: 80%;
+    }
+}
