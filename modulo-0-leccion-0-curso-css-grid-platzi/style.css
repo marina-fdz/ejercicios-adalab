@@ -1,0 +1,250 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: "Ojuju", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+} 
+
+body {
+    font-size: 1.6rem;
+    background-color: darkolivegreen;
+    display: grid;
+    grid-template-rows: repeat(auto-fit, minmax(auto,1fr));
+}
+
+header {
+    padding-top: 0.5rem;
+    background-color: darkorange;
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr;
+    grid-template-rows: repeat(auto-fit, minmax(auto,1fr));
+}
+
+.logo {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    justify-self: center;
+    align-self: center;
+}
+
+.menu {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    justify-self: center;
+    align-self: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.menu-item {
+    gap: 1rem;
+    margin: 1.5rem;
+    justify-self: center;
+    list-style: none;
+}
+
+.menu-item a {
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    border: 0.1rem solid darkorange;
+}
+
+.menu-item a:hover {
+    border: 0.1rem solid black;
+    border-radius: 50%;
+}
+
+.menu-item a:active {
+    color: darkolivegreen;
+}
+
+
+main {
+    background-color: whitesmoke;
+    display: grid;
+    grid-template-rows: repeat(auto-fit, minmax(10rem,1fr));
+    height: max-content;
+}
+
+.hero {
+    background-color: wheat;
+    display: grid;
+    /* grid-template-columns: 1fr 1fr; */
+    grid-template-rows: repeat(auto-fit, minmax(25rem,1fr));
+    height: fit-content;
+    padding-bottom: 3rem;
+}
+
+
+.hero-text {
+    margin: 1.5rem;
+    grid-area: 2 / 1 / 3 / 2;
+    border: 0.1rem solid black;
+    border-top-right-radius: 20rem;
+    padding: 3rem;
+}
+
+.info-button {
+    border:none;
+    border-radius: 0.2rem;
+    background-color: darkorange;;
+    padding: 1.2rem 2.4rem;
+    border: 0.1rem solid black;
+    font-family: "Ojuju", sans-serif;
+    font-weight: 600;
+}
+
+.info-button:hover {
+    border: 0.1rem solid black;
+    border-radius: 50%;
+}
+
+.our-dishes {
+    padding: 1.5rem;
+}
+
+.dishes-title {
+    text-align: center;
+    text-justify: center;
+    padding-bottom: 1.5rem;
+}
+
+.dishes-grid {
+    display: grid;
+    /* grid-template-columns: repeat(4, 1fr); */
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 15rem;
+    gap: 1.5rem;
+    
+}
+
+.dishes-item{
+    border: 0.1rem solid black;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-color: darkorange;
+}
+
+.dish-1 {
+    grid-area: 1 / 1 / 3 / 3;
+}
+
+.dishes-menu {
+    padding: 1.5rem;
+}
+
+.dishes-menu-title {
+    text-align: center;
+    text-justify: center;
+    padding-bottom: 1.5rem;
+}
+
+.dishes-menu-grid {
+    display: grid;
+    /* grid-template-columns: repeat(5, 1fr); */
+    grid-auto-rows: 15rem;
+    gap: 1.5rem;
+    
+}
+
+.menu-images{
+    border: 0.1rem solid black;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-color: darkorange;
+}
+
+.book-table {
+    padding: 1.5rem;
+}
+
+.book-table-title {
+    text-align: center;
+    text-justify: center;
+    padding-bottom: 1.5rem;
+}
+
+.book-table-form {
+    display: grid;
+    /* grid-template-columns: 1fr 4fr; */
+    grid-template-columns: 2fr 3fr;
+    grid-auto-rows: 1fr;
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+input {
+    border: 0.1rem solid black;
+    background-color: whitesmoke;
+    color: solid black;
+    font-family: "Ojuju", sans-serif;
+    padding: 0.5rem 1.5rem;
+}
+
+.booking-button {
+    grid-area: 5 / 2 / 6 / 3;
+    background-color: darkorange;
+}
+
+.booking-button:hover {
+    border: 0.1rem solid black;
+    border-radius: 50%;
+    /* margin: 0 10rem; */
+}
+
+
+footer {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    color: whitesmoke;
+    height: 1rem;
+}
+
+
+.company-name {
+    grid-column: 1 / 2;
+    justify-self: left;
+    align-self: center;
+    padding: 1rem;
+    margin: 1.5rem;
+}
+
+.social-links {
+    grid-column: 2 / 3;
+    align-self: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.rrss-item {
+    color: whitesmoke;
+    gap: 1rem;
+    margin: 1.5rem;
+    list-style: none;
+}
+
+.rrss-item a {
+    padding: 1rem;
+    text-decoration: none;
+    color: whitesmoke;
+    border: 0.1rem solid darkolivegreen;
+}
+
+.rrss-item a:hover {
+    border: 0.1rem solid whitesmoke;
+    border-radius: 50%;
+}
+
+.rrss-item a:active {
+    color: darkorange;
+}

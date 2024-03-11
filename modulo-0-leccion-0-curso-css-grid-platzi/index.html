@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="This is a test." />
+    <meta name="robots" content="index,follow" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./tablet.css" media="screen and (min-width: 600px)" />
+    <link rel="stylesheet" href="./desktop.css" media="screen and (min-width: 800px)" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ojuju:wght@200..800&display=swap" rel="stylesheet">
+    <title>Cariño cooking</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1 class="logo-header">Cariño cooking</h1>
+        </div>
+        <ul class="menu">
+            <li class="menu-item home"><a href="index.html">Home</a></li>
+            <li class="menu-item dishes"><a href="">Dishes</a></li>
+            <li class="menu-item selection"><a href="">Selection</a></li>
+            <li class="menu-item blog"><a href="">Blog</a></li>
+        </ul>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="hero-text">
+                <h1>Check the best food</h1>
+                <br/>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium assumenda numquam reiciendis fugiat consectetur ipsa alias vero, velit facilis, deleniti ea quasi qui aliquid, cumque omnis eius nam voluptas itaque?</p>
+                <br/>
+                <button class="info-button">Book a table</button>
+            </div>
+            <div class="hero-image"></div>
+        </section>
+        <section class="our-dishes">
+            <h2 class="dishes-title">Our dishes</h2>
+            <div class="dishes-grid">
+                <div class="dishes-item dish-1">Dish 1</div>
+                <div class="dishes-item dish-2">Dish 2</div>
+                <div class="dishes-item dish-3">Dish 3</div>
+                <div class="dishes-item dish-4">Dish 4</div>
+                <div class="dishes-item dish-5">Dish 5</div>
+            </div>
+        </section>
+        <section class="dishes-menu">
+            <h2 class="dishes-menu-title">Our selection</h2>
+            <div class="dishes-menu-grid">
+                <div class="menu-images menu-1">Menu 1</div>
+                <div class="menu-images menu-2">Menu 2</div>
+                <div class="menu-images menu-3">Menu 3</div>
+                <div class="menu-images menu-4">Menu 4</div>
+                <div class="menu-images menu-5">Menu 5</div>
+            </div>
+        </section>
+        <section class="book-table">
+            <h2 class="book-table-title">Book a table</h2>
+            <form class="book-table-form" action="">
+                <label for="name">Your name:</label>
+                    <input type="text" id="name" placeholder="Booking's name"/>
+                <label for="email">Your e-mail address:</label>
+                    <input type="email" id="email" placeholder="@"/>
+                <label for="party">Date:</label>
+                    <input id="party" type="datetime-local" name="partydate" />
+                <label for="number-people">Table for:</label>
+                    <input list="number-people"/>
+                    <datalist id="number-people">
+                        <option value="1 person"></option>
+                        <option value="2 people"></option>
+                        <option value="3 people"></option>
+                        <option value="4 people"></option>
+                        <option value="5 people"></option>
+                        <option value="6 people"></option>
+                        <option value="7 people"></option>
+                        <option value="8 people"></option>
+                    </datalist>
+                <input class="booking-button" type="submit" value="Book"/>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <div class="company-name">
+            <h4 class="logo-footer">Cariño cooking</h4>
+        </div>
+        <ul class="social-links">
+            <li class="rrss-item"><a href="">X</a></li>
+            <li class="rrss-item"><a href="">Facebook</a></li>
+            <li class="rrss-item"><a href="">Instagram</a></li>
+        </ul>
+    </footer>
+</body>
+</html>

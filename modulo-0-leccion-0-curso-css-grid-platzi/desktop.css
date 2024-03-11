@@ -1,0 +1,19 @@
+.hero {
+    grid-template-columns: 1fr 1fr; 
+}
+
+.dishes-grid {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.dishes-menu-grid {
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.book-table-form {
+    grid-template-columns: 1fr 4fr;
+}
+
+.booking-button:hover {
+    margin: 0 10rem;
+}
